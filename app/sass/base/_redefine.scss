@@ -1,0 +1,195 @@
+/* *********wap******* */
+//基本样式
+ /* html { touch-action: pan-y; }  */
+a:hover{
+	text-decoration:none!important;
+}
+html{
+    background-color: #f4f4f4!important;
+}
+body{
+    background-color: #f4f4f4;
+    background-size: cover;
+    height: 100vh;
+}
+ input::-webkit-input-placeholder{
+    color:#cccccc;
+    font-size: 30px;
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color:#cccccc;
+     font-size: 30px;
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color:#cccccc;
+     font-size: 30px;
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+    color:#cccccc;
+     font-size: 30px;
+}
+/* 清除浮动 */
+.clearfix{
+    *zoom:1;
+    &:after {
+        display:block;
+        content:"\200B";
+        clear:both;
+        height:0;
+    }
+}
+li{
+    list-style: none;
+}
+//按钮基本样式
+.weui-btn_primary{
+	background-color: #ff9933;
+	height: 80px;
+	line-height: 80px;
+}
+.weui-btn_disabled{
+    height: 80px;
+    line-height: 80px;
+    background-color: #f4f4f4;
+    color:#999999;
+}
+.weui-btn_primary:not(.weui-btn_disabled):active{
+	background-color: #ff9933;
+}
+
+.weui-navbar__item:active, .weui-cell_access:active {
+    background-color:inherit;
+}
+
+
+
+//错误提示
+.error-tips{
+    position: absolute;
+    text-align: left;
+    font-size: 28px;
+    color: #ff6633;
+    left: 30px;
+    height: 90px;
+    line-height: 90px;
+    i{
+        margin-right: 20px;
+    }
+}
+.error-line{
+   border-bottom:1px solid red!important;
+}
+.top-more, .bottom-more{
+    display: none;
+    text-align: center;
+    height: 70px;
+    line-height: 50px;
+    a{
+        font-size: 24px;
+        color: $oColor;
+        
+    }
+}
+.nomsg{
+    
+    text-align: center;
+    padding-top: 370px;
+    img{
+        width: 80px;
+        height: 105px;
+        margin: 0 auto;
+    }
+    p{  
+        font-size: 31.78px;
+        color: #999999;
+        margin-top: 35px;
+        text-align: center;
+    }
+}
+
+
+.AbnormalReminding{
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(0,0,0,.5);
+    overflow: hidden;
+    .ExitAccountPrompt{
+        width: 630px;
+       
+        background: $whiteColor;
+        @include border-radius(10px);
+        position: fixed;
+        left: 50%;top: 20%;
+        margin-left: -315px;
+        //margin-top: -150px;
+        .ExitAccountPromptText{
+            border-bottom: 2px solid $eColor;
+            overflow: hidden;
+            .Pairnumber{
+                padding: 30px 0;
+                border-bottom: 1px solid $eColor;
+                img{
+                    
+                    width: 100%;
+                    height: 100%;
+                    width: 50px;
+                    height: 50px;
+                    margin: -15px 30px 0;
+                    vertical-align: middle;
+                }
+                span{
+                    font-size: 30px;
+                    color: $bColor;
+                }
+            }
+            .ExitAccount_c{
+                padding: 30px 30px 30px;
+                border-bottom: 1px solid $eColor;
+                h3{
+                    color: $defaultColor1;
+                    font-size: 24px;
+                }
+                p{
+                    padding: 15px 0;
+                    font-size: 24px;
+                    color: #999999;
+                    line-height: 50px;
+                }
+            }
+            .ExitAccount_m{
+                padding: 18px 30px 34px;
+                p{
+                    line-height: 46px;
+                    color: $oColor;
+                    &:first-child{
+                        font-size: 30px;
+                        color: $cColor;
+
+                    }
+                }
+            }
+        }
+        .cancelDetermine{
+            height: 105px;
+            overflow: hidden;
+            line-height: 105px;
+            .Determine{
+                width: 100%;
+                a{
+                    color: $defaultColor;
+                }
+            }
+            .cancel,.Determine{
+                height: 100%;
+                text-align: center;
+                a{
+                    font-size: 30px;
+                }
+            }
+        }
+        
+    }
+}

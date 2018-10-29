@@ -1,0 +1,30 @@
+
+@charset "utf-8";
+@import  "helpers/_mixins.scss";  
+
+.header{
+	position: relative;
+	height: 80px;
+	line-height: 80px;
+	padding:0 26px;
+	text-align: center;
+	background-color: $defaultColor;
+	.logo{
+		height: 44px;
+		line-height: 44px;
+		vertical-align: middle;
+	}
+	.back{
+		position: absolute;
+		left: 26px;
+		i{
+			color:$whiteColor;
+		}
+	}
+	.header-title{
+		display: inline-block;
+		font-size: 32px;
+		color: $whiteColor;
+
+	}
+}

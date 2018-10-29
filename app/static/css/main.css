@@ -1,0 +1,298 @@
+@charset "UTF-8";
+
+/* *********wap******* */
+
+/* html { touch-action: pan-y; }  */
+
+a:hover {
+  text-decoration: none !important;
+}
+
+html {
+  background-color: #f4f4f4 !important;
+}
+
+body {
+  background-color: #f4f4f4;
+  background-size: cover;
+  height: 100vh;
+}
+
+input::-webkit-input-placeholder {
+  color: #cccccc;
+  font-size: 0.4rem;
+}
+
+input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #cccccc;
+  font-size: 0.4rem;
+}
+
+input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #cccccc;
+  font-size: 0.4rem;
+}
+
+input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #cccccc;
+  font-size: 0.4rem;
+}
+
+/* 清除浮动 */
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:after {
+  display: block;
+  content: "\200B";
+  clear: both;
+  height: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.weui-btn_primary {
+  background-color: #ff9933;
+  height: 1.066667rem;
+  line-height: 1.066667rem;
+}
+
+.weui-btn_disabled {
+  height: 1.066667rem;
+  line-height: 1.066667rem;
+  background-color: #f4f4f4;
+  color: #999999;
+}
+
+.weui-btn_primary:not(.weui-btn_disabled):active {
+  background-color: #ff9933;
+}
+
+.weui-navbar__item:active,
+.weui-cell_access:active {
+  background-color: inherit;
+}
+
+.error-tips {
+  position: absolute;
+  text-align: left;
+  font-size: 0.373333rem;
+  color: #ff6633;
+  left: 0.4rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+}
+
+.error-tips i {
+  margin-right: 0.266667rem;
+}
+
+.error-line {
+  border-bottom: 0.013333rem solid red !important;
+}
+
+.top-more,
+.bottom-more {
+  display: none;
+  text-align: center;
+  height: 0.933333rem;
+  line-height: 0.666667rem;
+}
+
+.top-more a,
+.bottom-more a {
+  font-size: 0.32rem;
+  color: #999999;
+}
+
+.nomsg {
+  text-align: center;
+  padding-top: 4.933333rem;
+}
+
+.nomsg img {
+  width: 1.066667rem;
+  height: 1.4rem;
+  margin: 0 auto;
+}
+
+.nomsg p {
+  font-size: 0.423733rem;
+  color: #999999;
+  margin-top: 0.466667rem;
+  text-align: center;
+}
+
+.AbnormalReminding {
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.AbnormalReminding .ExitAccountPrompt {
+  width: 8.4rem;
+  background: #fff;
+  -webkit-border-radius: 0.133333rem;
+  -moz-border-radius: 0.133333rem;
+  -o-border-radius: 0.133333rem;
+  border-radius: 0.133333rem;
+  position: fixed;
+  left: 50%;
+  top: 20%;
+  margin-left: -4.2rem;
+}
+
+.AbnormalReminding .ExitAccountPrompt .ExitAccountPromptText {
+  border-bottom: 0.026667rem solid #dddddd;
+  overflow: hidden;
+}
+
+.AbnormalReminding .ExitAccountPrompt .ExitAccountPromptText .Pairnumber {
+  padding: 0.4rem 0;
+  border-bottom: 0.013333rem solid #dddddd;
+}
+
+.AbnormalReminding .ExitAccountPrompt .ExitAccountPromptText .Pairnumber img {
+  width: 100%;
+  height: 100%;
+  width: 0.666667rem;
+  height: 0.666667rem;
+  margin: -0.2rem 0.4rem 0;
+  vertical-align: middle;
+}
+
+.AbnormalReminding .ExitAccountPrompt .ExitAccountPromptText .Pairnumber span {
+  font-size: 0.4rem;
+  color: #333333;
+}
+
+.AbnormalReminding .ExitAccountPrompt .ExitAccountPromptText .ExitAccount_c {
+  padding: 0.4rem 0.4rem 0.4rem;
+  border-bottom: 0.013333rem solid #dddddd;
+}
+
+.AbnormalReminding .ExitAccountPrompt .ExitAccountPromptText .ExitAccount_c h3 {
+  color: #ff6633;
+  font-size: 0.32rem;
+}
+
+.AbnormalReminding .ExitAccountPrompt .ExitAccountPromptText .ExitAccount_c p {
+  padding: 0.2rem 0;
+  font-size: 0.32rem;
+  color: #999999;
+  line-height: 0.666667rem;
+}
+
+.AbnormalReminding .ExitAccountPrompt .ExitAccountPromptText .ExitAccount_m {
+  padding: 0.24rem 0.4rem 0.453333rem;
+}
+
+.AbnormalReminding .ExitAccountPrompt .ExitAccountPromptText .ExitAccount_m p {
+  line-height: 0.613333rem;
+  color: #999999;
+}
+
+.AbnormalReminding .ExitAccountPrompt .ExitAccountPromptText .ExitAccount_m p:first-child {
+  font-size: 0.4rem;
+  color: #666666;
+}
+
+.AbnormalReminding .ExitAccountPrompt .cancelDetermine {
+  height: 1.4rem;
+  overflow: hidden;
+  line-height: 1.4rem;
+}
+
+.AbnormalReminding .ExitAccountPrompt .cancelDetermine .Determine {
+  width: 100%;
+}
+
+.AbnormalReminding .ExitAccountPrompt .cancelDetermine .Determine a {
+  color: #ff9933;
+}
+
+.AbnormalReminding .ExitAccountPrompt .cancelDetermine .cancel,
+.AbnormalReminding .ExitAccountPrompt .cancelDetermine .Determine {
+  height: 100%;
+  text-align: center;
+}
+
+.AbnormalReminding .ExitAccountPrompt .cancelDetermine .cancel a,
+.AbnormalReminding .ExitAccountPrompt .cancelDetermine .Determine a {
+  font-size: 0.4rem;
+}
+
+.container {
+  margin-bottom: 1.333333rem;
+}
+
+body {
+  padding: constant(safe-area-inset-top) constant(safe-area-inset-right) constant(safe-area-inset-bottom) constant(safe-area-inset-left) !important;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left) !important;
+}
+
+.header {
+  position: relative;
+  height: 1.066667rem;
+  line-height: 1.066667rem;
+  padding: 0 0.346667rem;
+  text-align: center;
+  background-color: #ff9933;
+}
+
+.header .logo {
+  height: 0.586667rem;
+  line-height: 0.586667rem;
+  vertical-align: middle;
+}
+
+.header .back {
+  position: absolute;
+  left: 0.346667rem;
+}
+
+.header .back i {
+  color: #fff;
+}
+
+.header .header-title {
+  display: inline-block;
+  font-size: 0.426667rem;
+  color: #fff;
+}
+
+.weui-tabbar {
+  position: fixed;
+  background-color: #fff;
+  height: 1.333333rem;
+}
+
+.weui-tabbar .weui-tabbar__item .weui-tabbar__icon {
+  margin-bottom: 0.04rem;
+  width: 0.533333rem;
+  height: 0.533333rem;
+}
+
+.weui-tabbar .weui-tabbar__item .weui-tabbar__icon i {
+  font-size: 0.533333rem;
+}
+
+.weui-tabbar .weui-tabbar__item p.weui-tabbar__label {
+  font-size: 0.266667rem;
+}
+
+.weui-tabbar .active .weui-tabbar__icon i,
+.weui-tabbar .active p.weui-tabbar__label {
+  color: #ff9933;
+}
