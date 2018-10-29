@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+@import  "helpers/_mixins.scss";                  //常用变量定义
+
+@import  "base/_redefine.scss";                   //基本样式定义
+
+@import  "layout/_body.scss";					  //页面主体样式 例如：模拟input，select， dialog box;
+
+@import  "layout/_header.scss";                   //页面头部样式   
+
+@import  "layout/_footer.scss";					  //页面尾部样式  
